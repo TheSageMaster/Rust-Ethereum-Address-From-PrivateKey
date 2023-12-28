@@ -1,11 +1,10 @@
 # Ethereum Address Generator
-This Rust project is designed to convert Ethereum private keys into their corresponding Ethereum addresses. It reads private keys from a file and generates both compressed and uncompressed Bitcoin addresses and WIFs for each key.
+This Rust project is designed to convert Ethereum private keys into their corresponding Ethereum addresses. It reads private keys from a file and generates an EIP-55 Compliant Ethereum address.
 
 # Features
 1. Reads hexadecimal private keys from an external file.
-2. Converts private keys to both compressed and uncompressed WIF.
-3. Generates both compressed and uncompressed Bitcoin addresses.
-4. Utilizes robust cryptographic functions with a focus on accuracy and security.
+2. Generates EIP-55 Compliant Ethereum Address.
+3. Utilizes robust cryptographic functions with a focus on accuracy and security.
 
 # Prerequisites
 Before running this project, ensure you have Rust installed on your machine. Follow the instructions at The Rust Programming Language to set it up.
@@ -13,11 +12,11 @@ Before running this project, ensure you have Rust installed on your machine. Fol
 # Installation
 1. Clone the repository:
 ```
-git clone https://github.com/TheSageMaster/Rust-Bitcoin-Address-from-Private-Key.git
+git clone https://github.com/TheSageMaster/Rust-Ethereum-Address-From-PrivateKey.git
 ```
 2. Change into the project directory:
 ```
-cd Rust-Bitcoin-Address-from-Private-Key
+cd Rust-Ethereum-Address-From-PrivateKey
 ```
 
 # Preparing the Private Keys
@@ -30,7 +29,7 @@ Example format of `private_keys.txt`:
 ```
 
 # Usage
-To use the Bitcoin Address Generator, follow these steps:
+To use the Ethereum Address Generator, follow these steps:
 
 1. Ensure `private_keys.txt` is populated with your private keys.
 2. Compile and run the program:
@@ -43,13 +42,12 @@ This project relies on the following external crates:
 
 `ethnum`: For handling large numbers.
 `k256`: For elliptic curve cryptography specific to secp256k1.
-`sha2` and `ripemd`: For cryptographic hash functions.
-`base58`: For Base58Check encoding.
+`sha3`: For cryptographic hash functions.
 
 These dependencies are specified in the Cargo.toml file.
 
 # Contributing
-Contributions to the Bitcoin Address Generator are welcome. Please fork the repository, make your changes, and create a pull request.
+Contributions to the Ethereum Address Generator are welcome. Please fork the repository, make your changes, and create a pull request.
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
